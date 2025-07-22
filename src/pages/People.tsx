@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import {getAllPeople} from "../components/people/peopleQuery"
 import { type Person } from '../util/types'
 import Button from '../components/generic/Button'
