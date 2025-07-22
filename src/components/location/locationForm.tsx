@@ -3,7 +3,7 @@
 
 type Props = {}
 
-export default function locationForm({}: Props) {
+export default function LocationForm({}: Props) {
   return (
     <div>locationForm</div>
   )

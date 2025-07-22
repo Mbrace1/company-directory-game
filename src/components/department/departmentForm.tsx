@@ -3,7 +3,7 @@
 
 type Props = {}
 
-export default function departmentForm({}: Props) {
+export default function DepartmentForm({}: Props) {
   return (
     <div>departmentForm</div>
   )
