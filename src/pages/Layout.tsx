@@ -1,4 +1,3 @@
-import React from 'react'
 import { Outlet } from 'react-router'
 import Navigation from '../components/Navigation'
 
@@ -8,7 +7,9 @@ export default function Layout({}: Props) {
   return (
     <>
         <Navigation/>
-        <Outlet/>
+        <div className='mt-20'>
+          <Outlet/>
+        </div>
     </>
   )
 }
