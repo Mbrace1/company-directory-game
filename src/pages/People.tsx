@@ -3,7 +3,7 @@ import {getAllPeople} from "../components/people/peopleQuery"
 import { type Person } from '../util/types'
 import Button from '../components/generic/Button'
 import Modal from '../components/generic/Modal'
-import PeopleForm from '../components/people/PeopleForm'
+import PeopleForm from '../components/people/Form'
 
 type Props = {}
 

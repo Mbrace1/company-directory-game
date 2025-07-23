@@ -1,6 +1,6 @@
 import Modal from "../components/generic/Modal"
 import Button from "../components/generic/Button"
-import LocationForm from "../components/location/LocationForm"
+import LocationForm from "../components/location/Form"
 import { type Location } from "../util/types"
 import { useState, useEffect } from "react"
 import { getAllLocations } from "../components/location/locationQuery"
@@ -27,9 +27,7 @@ export default function Locations({}: Props) {
       
     }
   
-    function handleAddLocation(data : Location) {
-      console.log(data);
-      
+    function handleAddLocation() {
       // send to supabase
     }
   
@@ -41,6 +39,7 @@ export default function Locations({}: Props) {
     <>
       <Modal title={"Add Person"} isOpen={isOpen} onClose={() => setIsOpen(false)}>
         <LocationForm/>
+        <Button onClick={handleAddLocation} variant={"flat"} className='bg-green-500'>add</Button>
       </Modal>
 
       <div className='flex flex-row justify-between m-1 p-2 bg-gray-100 text-black'>
